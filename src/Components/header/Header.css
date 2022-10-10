@@ -1,0 +1,9 @@
+.navigation{
+    gap:650px;
+}
+.list a{
+    text-decoration: none;
+    margin-right: 70px;
+    color: blueviolet;
+
+}
