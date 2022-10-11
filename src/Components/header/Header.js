@@ -4,19 +4,18 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <nav className=' navigation container d-flex g-5 border-2 shadow-lg mt-3 p-2 '>
+        <nav className=' navigation container d-flex border-2 shadow-lg mt-3  p-2 '>
             <div>
-                <h2>Mega Quiz</h2>
+                <h2 >Mega Quiz Contest</h2>
             </div>  
-            <div className='list p-2'>
+            <div className='list p-2 justify-content-end '>
                 <Link to='/home'>Home</Link>
-                <Link to='/home'>Topics</Link>
-                <Link to='/home'>Statictis</Link>
-                <Link to='/home'>Blog</Link>
+                
+                
+                <Link to='/blog'>Blog</Link>
+                <Link to='/home'>Staticties</Link>
                 
                 </div>
-              
-         
 
         </nav>
     );
