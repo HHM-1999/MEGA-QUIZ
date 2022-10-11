@@ -4,6 +4,7 @@ import Main from './Layouts/Main';
 import Home from './Components/home/Home'
 import Blog from './Components/blog/Blog';
 
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -11,8 +12,8 @@ function App() {
       element: <Main></Main>,
       children: [
         {
-          path: '/home',
-          loader:()=>fetch(' https://openapi.programming-hero.com/api/quiz'),
+          path: 'home',
+          loader:()=> fetch(`https://openapi.programming-hero.com/api/quiz`),
           element: <Home></Home>
         },
          {
@@ -22,6 +23,15 @@ function App() {
     }
       ]
     },
+    {
+      path:'*',
+      element: <div className='position-absolute bottom-50 end-50'>
+                    <h1>404</h1>
+                    <h2>Oops!!! You're Lost 😥</h2>
+                    <p>The Page you are looking for was not found..................</p>
+      </div>
+      
+    }
    
   ])
   return (
