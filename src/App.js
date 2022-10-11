@@ -9,36 +9,37 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
+      loader: () => fetch(`https://openapi.programming-hero.com/api/quiz`),
       element: <Main></Main>,
       children: [
         {
-          path: 'home',
-          loader:()=> fetch(`https://openapi.programming-hero.com/api/quiz`),
+          path: '/',
+          loader: () => fetch(`https://openapi.programming-hero.com/api/quiz`),
           element: <Home></Home>
         },
-         {
-      path: "/blog",
-      element:<Blog></Blog>
-      
-    }
+        {
+          path: "/blog",
+          element: <Blog></Blog>
+
+        }
       ]
     },
     {
-      path:'*',
+      path: '*',
       element: <div className='position-absolute bottom-50 end-50'>
-                    <h1>404</h1>
-                    <h2>Oops!!! You're Lost 😥</h2>
-                    <p>The Page you are looking for was not found..................</p>
+        <h1>404</h1>
+        <h2>Oops!!! You're Lost 😥</h2>
+        <p>The Page you are looking for was not found..................</p>
       </div>
-      
+
     }
-   
+
   ])
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
-    
-    </div>    
+
+    </div>
   );
 }
 
