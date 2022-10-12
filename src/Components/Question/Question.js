@@ -29,7 +29,7 @@ const Question = ({ ques }) => {
     }
     return (
         <div className='container'>
-            <div className='border border-2 my-2 d-flex flex-column justify-content-center align-items-center text-bg-light'>
+            <div className='border border-2 my-2 d-flex flex-column justify-content-center align-items-center bg-success text-bg-light'>
                 <div className='d-flex align-content-center justify-content-between'>
                     <h2 className='text-center'>{question}</h2>
                     <button className='btn border-0' onClick={() => handleAnswer(correctAnswer)}>👁️</button>
