@@ -6,9 +6,6 @@ import Blog from './Components/blog/Blog';
 import Mcq from './Components/MCQ/Mcq';
 import SalesChart from './Components/SalesChart/SalesChart';
 
-
-
-
 function App() {
   const router = createBrowserRouter([
     {

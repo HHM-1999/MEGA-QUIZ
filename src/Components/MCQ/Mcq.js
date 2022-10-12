@@ -15,9 +15,7 @@ const Mcq = () => {
                     questions.map(ques => <Question key={ques.id} ques={ques}></Question>)
                 }
             </div>
-            {/* {
-              
-            } */}
+
         </div>
     );
 };
