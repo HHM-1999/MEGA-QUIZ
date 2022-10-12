@@ -8,7 +8,7 @@ const Home = () => {
     const Courses = useLoaderData();
     // console.log(Courses);
     const { data } = Courses;
-    console.log(data);
+
 
 
 
