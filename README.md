@@ -1,3 +1,35 @@
+# Code link :
+# Live link :
+
+# Project Name : Mega Quiz 
+
+This Project is created with [Create React And React Router ].
+
+# Available Scripts
+
+In this Project directory , I can run :
+
+### npm start 
+Runs the apps in the devolopment mode 
+open [http://localhost:3000/] (http://localhost:3000/) to view it in browser.
+
+### npm create react 
+
+### npm react router 
+
+### react- bootstrap
+
+### npm Recharts 
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
