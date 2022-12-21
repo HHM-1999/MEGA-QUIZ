@@ -5,10 +5,10 @@ import './Header.css';
 const Header = () => {
     return (
         <div className='container'>
-            <div className='d-flex  justify-content-between border-2 shadow-lg mt-4 p-2'>
+            <div className='d-flex bg-dark text-white justify-content-between border-2 shadow-lg mt-4 p-2'>
                 <h1>Mega Quiz</h1>
-                <ul className="nav justify-content-end">
-                    <li className="nav-item">
+                <ul className="nav justify-content-end text-light">
+                    <li className="nav-item ">
                         <Link to="/" className="nav-link">Home</Link>
                     </li>
                     <li className="nav-item">
