@@ -7,8 +7,8 @@ import Swal from 'sweetalert2';
 const Question = ({ ques }) => {
     const { question, options, correctAnswer } = ques;
     // console.log(ques.Length);
-    const handleOption = (opt) => {
-        if (opt.length === correctAnswer.length) {
+    const handleOption = (value) => {
+        if (value.length === correctAnswer.length) {
             toast("Right answer!");
             // console.log("right");
         }
@@ -37,10 +37,10 @@ const Question = ({ ques }) => {
                 </div>
 
                 {
-                    options.map(opt => <div >
+                    options.map(value => <div >
 
-                        <input type="radio" value={opt} name="radio" onChange={() => handleOption(opt)} />
-                        <span className='text-sm-start'> {opt}</span>
+                        <input type="radio" value={value} name="radio" onChange={() => handleOption(value)} />
+                        <span className='text-sm-start'> {value}</span>
                         <ToastContainer />
                     </div>)
 
