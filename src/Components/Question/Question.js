@@ -29,17 +29,18 @@ const Question = ({ ques }) => {
     }
     return (
         <div className='container'>
-            <div className='border border-2 my-2 d-flex flex-column justify-content-center align-items-center bg-success text-bg-light'>
-                <div className='d-flex align-content-center justify-content-between'>
-                    <h2 className='text-center'>{question}</h2>
+            <div className='border border-2 shadow-lg my-5 p-4 d-flex flex-column  bg-secondary text-bg-light px-5'>
+                <div className='d-flex'>
+                    <h3 className='text-white my-3'>{question}</h3>
+
                     <button className='btn border-0' onClick={() => handleAnswer(correctAnswer)}>👁️</button>
                 </div>
 
                 {
-                    options.map(opt => <div>
+                    options.map(opt => <div >
 
                         <input type="radio" value={opt} name="radio" onChange={() => handleOption(opt)} />
-                        <span>{opt}</span>
+                        <span className='text-sm-start'> {opt}</span>
                         <ToastContainer />
                     </div>)
 

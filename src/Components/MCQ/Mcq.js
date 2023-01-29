@@ -9,7 +9,7 @@ const Mcq = () => {
     console.log(mcq);
     return (
         <div className='row'>
-            <h2 className='text-center'>{name}</h2>
+            <h2 className='text-center mt-5'><b>{name}</b></h2>
             <div>
                 {
                     questions.map(ques => <Question key={ques.id} ques={ques}></Question>)
