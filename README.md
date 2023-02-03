@@ -1,13 +1,8 @@
-# Code link :
-# Live link :
+# Project Name : Mega Quiz
+# Live link :https://kaleidoscopic-taiyaki-0e24f7.netlify.app/
 
-# Project Name : Mega Quiz 
 
-This Project is created with [Create React And React Router ].
 
-# Available Scripts
-
-In this Project directory , I can run :
 
 ### npm start 
 Runs the apps in the devolopment mode 
