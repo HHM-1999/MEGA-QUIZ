@@ -18,7 +18,7 @@ const Home = () => {
             <p className='mt-4 fs-5'>
                 We arrange a Perfect platform for all active Students of different topics quizzes. The Topics are React,Html,Css,Javascript. Students can give quizzes and gaining knowledge with giving several types of MCQ Question in Various Topics . Also they will get Marks immediately which will increasing their Confidence  day by day. <br></br>
                 <br></br>
-                <span className='mt-5 fs-2 text-success' ><b>So Guys!!! Checkout all these question and set yourself in topmost level. All the Best...</b></span>
+                <span className='mt-5 fs-2 text-success' ><b>So Guys!!! Checkout all these question and set yourself in topmost level. All the Best........</b></span>
             </p>
 
             <div className='container'>
